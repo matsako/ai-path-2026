@@ -309,3 +309,13 @@ footer a{color:var(--ember);text-decoration:none}
   .topnav{padding:11px 18px}
   .topnav .brand{font-size:0.68rem}
 }
+
+/* ---------- mid-story CTA → cases ---------- */
+.midcta{background:var(--band);color:var(--on-band);padding:clamp(40px,7vh,76px) 0}
+.midcta .wrap{display:flex;align-items:center;justify-content:space-between;gap:clamp(22px,4vw,52px);flex-wrap:wrap}
+.midcta .mc-text{max-width:36ch}
+.midcta .mc-kicker{font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--ember);margin-bottom:0.8em}
+.midcta h2{font-family:var(--font-display);font-weight:700;font-size:clamp(1.5rem,1.2rem + 1.6vw,2.4rem);color:var(--on-band);line-height:1.08;letter-spacing:-0.01em}
+.midcta a{flex-shrink:0;font-family:var(--font-mono);font-size:0.84rem;letter-spacing:0.03em;color:var(--paper);background:var(--ember);text-decoration:none;padding:15px 28px;white-space:nowrap;transition:transform .3s var(--ease),background .3s var(--ease)}
+.midcta a:hover{background:var(--ember-deep);transform:translateX(5px)}
+@media (max-width:720px){.midcta .wrap{flex-direction:column;align-items:flex-start}}
