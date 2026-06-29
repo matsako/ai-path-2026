@@ -337,3 +337,9 @@ footer a{color:var(--ember);text-decoration:none}
 .endcta .cta-row a.secondary{background:transparent;color:var(--paper);border:1px solid var(--paper)}
 .endcta .cta-row a.secondary:hover{background:var(--paper);color:var(--ember)}
 @media (max-width:720px){.endcta .cta-row{flex-direction:column}}
+
+/* ---------- midcta: second button ---------- */
+.midcta .mc-actions{display:flex;flex-direction:column;gap:12px;flex-shrink:0}
+.midcta .mc-actions a{margin:0}
+.midcta a.secondary{background:transparent;color:var(--on-band);border:1px solid var(--on-band-soft);text-align:center}
+.midcta a.secondary:hover{background:transparent;color:var(--paper);border-color:var(--on-band)}
