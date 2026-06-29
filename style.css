@@ -319,3 +319,9 @@ footer a{color:var(--ember);text-decoration:none}
 .midcta a{flex-shrink:0;font-family:var(--font-mono);font-size:0.84rem;letter-spacing:0.03em;color:var(--paper);background:var(--ember);text-decoration:none;padding:15px 28px;white-space:nowrap;transition:transform .3s var(--ease),background .3s var(--ease)}
 .midcta a:hover{background:var(--ember-deep);transform:translateX(5px)}
 @media (max-width:720px){.midcta .wrap{flex-direction:column;align-items:flex-start}}
+
+/* ---------- cases CTA: two buttons ---------- */
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:1.7em}
+.cases-cta .cta-row a{margin-top:0}
+.cases-cta .cta-row a.secondary{background:transparent;color:var(--on-band);border:1px solid var(--on-band-soft)}
+.cases-cta .cta-row a.secondary:hover{border-color:var(--on-band);color:var(--paper);background:transparent}
