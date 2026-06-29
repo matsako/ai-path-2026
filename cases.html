@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>кейсы участников gconf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="index.html">ии · путь и ресёрч</a>
+  <div class="navlinks">
+    <a href="index.html">путь</a>
+    <a href="cases.html" class="active">кейсы gconf</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="cases-hero">
+  <div class="wrap">
+    <div class="kicker r">комьюнити gconf</div>
+    <h1 class="r d1">кейсы участников: что собрали обычные люди</h1>
+    <p class="dek r d2">не разработчики, не стартаперы с командой. люди из комьюнити, которые сели и построили работающую вещь, ставя задачу словами.</p>
+    <div class="draftnote r d3">черновик-скелет. это плейсхолдеры для структуры - пришли реальные кейсы (имя, что построил, результат, цитата), и я заполню перед тем, как ты будешь слать ссылку широко.</div>
+  </div>
+</header>
+
+<!-- ============ CASES ============ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="caselist">
+
+      <article class="case r">
+        <div class="who">
+          <div class="cn">01</div>
+          <div class="pname">[имя / @ник]</div>
+          <div class="role">[кто по жизни: профессия, не из ит]</div>
+          <div class="tool">codex</div>
+        </div>
+        <div class="body">
+          <h3>[что построил - одной фразой]</h3>
+          <p>[2-3 предложения: какая была задача/боль, что сделал в codex, сколько заняло. без технических деталей, на языке обычного человека.]</p>
+          <div class="metric"><span class="mv">[X]</span><span class="ml">[единица результата: лидов / часов сэкономлено / ₽ / пользователей]</span></div>
+          <p class="q">«[короткая живая цитата участника про момент, когда получилось]»<cite>[имя], gconf</cite></p>
+        </div>
+      </article>
+
+      <article class="case r">
+        <div class="who">
+          <div class="cn">02</div>
+          <div class="pname">[имя / @ник]</div>
+          <div class="role">[кто по жизни]</div>
+          <div class="tool">codex</div>
+        </div>
+        <div class="body">
+          <h3>[что построил]</h3>
+          <p>[2-3 предложения про задачу и результат.]</p>
+          <div class="metric"><span class="mv">[X]</span><span class="ml">[единица результата]</span></div>
+          <p class="q">«[цитата]»<cite>[имя], gconf</cite></p>
+        </div>
+      </article>
+
+      <article class="case r">
+        <div class="who">
+          <div class="cn">03</div>
+          <div class="pname">[имя / @ник]</div>
+          <div class="role">[кто по жизни]</div>
+          <div class="tool">codex</div>
+        </div>
+        <div class="body">
+          <h3>[что построил]</h3>
+          <p>[2-3 предложения про задачу и результат.]</p>
+          <div class="metric"><span class="mv">[X]</span><span class="ml">[единица результата]</span></div>
+          <p class="q">«[цитата]»<cite>[имя], gconf</cite></p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cases-cta">
+  <div class="wrap">
+    <h2 class="r">следующий кейс - твой</h2>
+    <p class="r d1">приходи на викенд, выбери одну свою задачу и собери первую рабочую вещь за вечер.</p>
+    <a class="r d2" href="index.html">← вернуться к пути</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h3>gconf · кейсы комьюнити</h3>
+    <div class="meta">
+      вход для обычных людей - codex<br>
+      путь рынка ии и весь разбор: <a href="index.html">на главной</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:0.15, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.r').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
