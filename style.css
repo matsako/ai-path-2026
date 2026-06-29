@@ -325,3 +325,15 @@ footer a{color:var(--ember);text-decoration:none}
 .cases-cta .cta-row a{margin-top:0}
 .cases-cta .cta-row a.secondary{background:transparent;color:var(--on-band);border:1px solid var(--on-band-soft)}
 .cases-cta .cta-row a.secondary:hover{border-color:var(--on-band);color:var(--paper);background:transparent}
+
+/* ---------- closing CTA on path page ---------- */
+.endcta{background:var(--ember);color:var(--paper);padding:clamp(56px,10vh,112px) 0;text-align:center}
+.endcta h2{font-family:var(--font-display);font-weight:800;font-size:clamp(1.9rem,1.4rem + 2.6vw,3.6rem);color:var(--paper);max-width:20ch;margin:0 auto 0.5em;letter-spacing:-0.01em;line-height:1.05}
+.endcta p{color:oklch(0.97 0.02 80);max-width:48ch;margin:0 auto;font-size:clamp(1.02rem,0.95rem + 0.5vw,1.25rem)}
+.endcta .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:1.9em}
+.endcta .cta-row a{font-family:var(--font-mono);font-size:0.84rem;letter-spacing:0.03em;text-decoration:none;padding:15px 28px;white-space:nowrap;transition:transform .3s var(--ease),background .3s var(--ease),color .3s var(--ease)}
+.endcta .cta-row a.primary{background:var(--band);color:var(--paper)}
+.endcta .cta-row a.primary:hover{background:var(--ink);transform:translateY(-2px)}
+.endcta .cta-row a.secondary{background:transparent;color:var(--paper);border:1px solid var(--paper)}
+.endcta .cta-row a.secondary:hover{background:var(--paper);color:var(--ember)}
+@media (max-width:720px){.endcta .cta-row{flex-direction:column}}
